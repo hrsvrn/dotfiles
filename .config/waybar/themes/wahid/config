@@ -1,0 +1,126 @@
+// -*- mode: json -*-
+
+{
+	"layer": "top",
+	"position": "top",
+  "reload_style_on_change": true,
+
+	"modules-left": [
+		"hyprland/workspaces",
+    "mpris"
+	],
+	"modules-center": [
+		"clock#1",
+		"clock#2",
+		"clock#3",
+	],
+	"modules-right": [
+		"wireplumber",
+    "network",
+		"memory",
+		"cpu",
+		"battery",
+		"tray"
+	],
+
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+  "mpris": {
+    "dynamic-order" : ["title", "artist", "position", "length"],
+    "title-len" : 35,
+    "artist-len" : 20,
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+  },
+
+	"clock#1": {
+		"format": "{:%a}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%d-%m}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+	},
+
+  "cava": {
+        "cava_config": "/home/hrsvrn/.config/cava/config",
+        "input_delay": 2,
+        "hide_on_silence": true,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": { "on-click-right": "mode" }
+  },
+
+	"wireplumber": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} {volume}%",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": " ",
+			"default": [
+				"",
+				"",
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+		"on-right-click": "pavucontrol",
+	},
+
+  "network": {
+    "interface": "wlp3s0",
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+    "format-disconnected": "  X", 
+    "tooltip-format-wifi": "{essid} via {ifname}",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "ghostty -e \"nmcli d w l; sleep 0.5; nmtui\""
+  },
+
+	"memory": {
+		"interval": 5,
+		"format": " {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": " {usage}%"
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+	},
+	"disk": {
+		"interval": 5,
+		"format": " {percentage_used}%",
+		"path": "/"
+	},
+	"tray": {
+		"icon-size": 14,
+    "spacing": 6 
+	}
+}
