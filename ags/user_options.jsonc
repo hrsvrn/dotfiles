@@ -20,7 +20,10 @@
             "apis": {
                 "defaultPage": "gpt"
             },
-            "defaultPage": "apis"
+            "defaultPage": "tools"
         }
+    },
+    "ai": {
+        "defaultGPTProvider": "ollama_llama_3_2"
     }
 }

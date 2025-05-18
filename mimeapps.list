@@ -1,5 +1,7 @@
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
+video/x-matroska=vlc.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Evince.desktop;
+video/x-matroska=vlc.desktop;mpv.desktop;

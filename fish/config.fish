@@ -23,3 +23,17 @@ alias pamcan=pacman
 #   set_color cyan; echo (pwd)
 #   set_color green; echo '> '
 # end
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/hrsvrn/miniconda3/bin/conda
+    eval /home/hrsvrn/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/home/hrsvrn/miniconda3/etc/fish/conf.d/conda.fish"
+        . "/home/hrsvrn/miniconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/home/hrsvrn/miniconda3/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+
