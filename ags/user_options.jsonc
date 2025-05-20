@@ -21,6 +21,9 @@
                 "defaultPage": "gpt"
             },
             "defaultPage": "tools"
+        },
+        "calendar": {
+            "expandByDefault": false
         }
     },
     "ai": {
