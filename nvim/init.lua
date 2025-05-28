@@ -24,7 +24,7 @@ require 'plugins.telescope',
 require 'plugins.lsp',
 require 'plugins.autocompletion',
 require 'plugins.gitsigns',
-require 'plugins.alpha',
 require 'plugins.misc',
 require 'plugins.transparency',
+require 'plugins.snacks'
 })
