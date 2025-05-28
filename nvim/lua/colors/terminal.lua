@@ -1,0 +1,56 @@
+local M = {}
+
+M.base_30 = {
+  white = '#FFFFFF',
+  darker_black = '#151B25',
+  black = '#151B25',
+  black2 = '#151B25',
+  one_bg = '#C3B5C0',
+  one_bg2 = '#C3B5C0',
+  one_bg3 = '#C3B5C0',
+  grey = '#C3B5C0',
+  grey_fg = '#C3B5C0',
+  grey_fg2 = '#C3B5C0',
+  light_grey = '#C3B5C0',
+  red = '#8383FF',
+  baby_pink = '#8383FF',
+  pink = '#8383FF',
+  line = '#C3B5C0',
+  green = '#64DCF0',
+  vibrant_green = '#64DCF0',
+  blue = '#89AFD3',
+  nord_blue = '#89AFD3',
+  yellow = '#FFDCF3',
+  sun = '#FFDCF3',
+  purple = '#99A6EF',
+  dark_purple = '#99A6EF',
+  teal = '#92D1F9',
+  orange = '#FFDCF3',
+  cyan = '#92D1F9',
+  statusline_bg = '#151B25',
+  lightbg = '#C3B5C0',
+  pmenu_bg = '#89AFD3',
+  folder_bg = '#89AFD3',
+}
+
+M.base_16 = {
+  base00 = '#151B25',
+  base01 = '#C3B5C0',
+  base02 = '#C3B5C0',
+  base03 = '#C3B5C0',
+  base04 = '#C3B5C0',
+  base05 = '#CCDBD5',
+  base06 = '#CCDBD5',
+  base07 = '#CCDBD5',
+  base08 = '#8383FF',
+  base09 = '#FFDCF3',
+  base0A = '#FFDCF3',
+  base0B = '#64DCF0',
+  base0C = '#92D1F9',
+  base0D = '#89AFD3',
+  base0E = '#99A6EF',
+  base0F = '#8383FF',
+}
+
+return M
+
