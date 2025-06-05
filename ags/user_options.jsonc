@@ -23,7 +23,7 @@
             "defaultPage": "apis"
         },
         "calendar": {
-            "expandByDefault": true
+            "expandByDefault": false
         }
     },
     "ai": {
