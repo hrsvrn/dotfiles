@@ -1,0 +1,18 @@
+/**
+ *
+ * Author : [Your Name]
+ * Palette: Custom Blues
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #0C1B2999;
+    background-alt: #003E72FF;
+    foreground:     #64DCF0FF;
+    selected:       #8ECDF3FF;
+    active:         #92D1F9FF;
+    urgent:         #80DFEEFF;
+    border:         #070A0AFF;
+}
+
