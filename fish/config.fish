@@ -13,27 +13,16 @@ if status is-interactive
 end
 
 starship init fish | source
-if test -f ~/.cache/ags/user/generated/terminal/sequences.txt
-    cat ~/.cache/ags/user/generated/terminal/sequences.txt
+if test -f ~/.local/state/quickshell/user/generated/terminal/sequences.txt
+    cat ~/.local/state/quickshell/user/generated/terminal/sequences.txt
 end
 
-alias pamcan=pacman
+alias pamcan pacman
+alias ls 'eza --icons'
+alias clear "printf '\033[2J\033[3J\033[1;1H'"
+    
 
 # function fish_prompt
 #   set_color cyan; echo (pwd)
 #   set_color green; echo '> '
 # end
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if test -f /home/hrsvrn/miniconda3/bin/conda
-    eval /home/hrsvrn/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/home/hrsvrn/miniconda3/etc/fish/conf.d/conda.fish"
-        . "/home/hrsvrn/miniconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/home/hrsvrn/miniconda3/bin" $PATH
-    end
-end
-# <<< conda initialize <<<
-

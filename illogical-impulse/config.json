@@ -1,0 +1,133 @@
+{
+  "policies": {
+    "ai": 1,
+    "weeb": 1
+  },
+  "ai": {
+    "systemPrompt": "Use casual tone. No user knowledge is to be assumed except basic Linux literacy. Be brief and concise: When explaining concepts, use bullet points (prefer minus sign (-) over asterisk (*)) and highlight keywords in bold to pinpoint the main concepts instead of long paragraphs. You are also encouraged to split your response with h2 headers, each header title beginning with an emoji, like `## 🐧 Linux`. When making changes to the user's config, you must get the config to know what values there are before setting."
+  },
+  "appearance": {
+    "fakeScreenRounding": 2,
+    "transparency": true,
+    "palette": {
+      "type": "auto"
+    }
+  },
+  "audio": {
+    "protection": {
+      "enable": true,
+      "maxAllowedIncrease": 10,
+      "maxAllowed": 90
+    }
+  },
+  "apps": {
+    "bluetooth": "kcmshell6 kcm_bluetooth",
+    "imageViewer": "loupe",
+    "network": "plasmawindowed org.kde.plasma.networkmanagement",
+    "networkEthernet": "kcmshell6 kcm_networkmanagement",
+    "settings": "systemsettings",
+    "taskManager": "plasma-systemmonitor --page-name Processes",
+    "terminal": "kitty -1"
+  },
+  "background": {
+    "fixedClockPosition": false,
+    "clockX": -500,
+    "clockY": -500
+  },
+  "bar": {
+    "bottom": false,
+    "borderless": false,
+    "topLeftIcon": "spark",
+    "showBackground": true,
+    "verbose": true,
+    "resources": {
+      "alwaysShowSwap": true,
+      "alwaysShowCpu": false
+    },
+    "screenList": {},
+    "utilButtons": {
+      "showScreenSnip": true,
+      "showColorPicker": false,
+      "showMicToggle": false,
+      "showKeyboardToggle": true
+    },
+    "tray": {
+      "monochromeIcons": true
+    },
+    "workspaces": {
+      "shown": 10,
+      "showAppIcons": true,
+      "alwaysShowNumbers": false,
+      "showNumberDelay": 300
+    }
+  },
+  "battery": {
+    "low": 20,
+    "critical": 5,
+    "suspend": 2
+  },
+  "dock": {
+    "height": 60,
+    "hoverRegionHeight": 3,
+    "pinnedOnStartup": false,
+    "hoverToReveal": false,
+    "pinnedApps": {}
+  },
+  "language": {
+    "translator": {
+      "engine": "auto",
+      "targetLanguage": "auto",
+      "sourceLanguage": "auto"
+    }
+  },
+  "networking": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+  },
+  "osd": {
+    "timeout": 1000
+  },
+  "osk": {
+    "layout": "qwerty_full",
+    "pinnedOnStartup": false
+  },
+  "overview": {
+    "scale": 0.18,
+    "numOfRows": 2,
+    "numOfCols": 5,
+    "showXwaylandIndicator": true
+  },
+  "resources": {
+    "updateInterval": 3000
+  },
+  "search": {
+    "nonAppResultDelay": 30,
+    "engineBaseUrl": "https://www.google.com/search?q=",
+    "excludedSites": {},
+    "sloppy": false,
+    "prefix": {
+      "action": "/",
+      "clipboard": ";",
+      "emojis": ":"
+    }
+  },
+  "sidebar": {
+    "translator": {
+      "delay": 300
+    },
+    "booru": {
+      "allowNsfw": false,
+      "defaultProvider": "yandere",
+      "limit": 20,
+      "zerochan": {
+        "username": "[unset]"
+      }
+    }
+  },
+  "time": {
+    "format": "hh:mm",
+    "dateFormat": "dddd, dd/MM"
+  },
+  "hacks": {
+    "arbitraryRaceConditionDelay": 20
+  }
+}
